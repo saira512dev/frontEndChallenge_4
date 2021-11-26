@@ -1,0 +1,129 @@
+@import "settings.scss";
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  background: $very-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  margin: 10px 20px;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+
+  .sedans {
+    background: $bright-orange;
+
+    p {
+      margin-right: 25px;
+    }
+  }
+
+  .suvs {
+    background: $dark-cyan;
+  }
+
+  .luxury {
+    background: $very-dark-cyan;
+  }
+}
+
+.content {
+  margin: 30px 30px;
+  text-align: left;
+  width: 220px;
+  h1 {
+    margin: 30px 0;
+    color: $very-light-gray;
+    font-family: "Big Shoulders Display", cursive;
+  }
+
+  p {
+    font-size: $para-font-size;
+    color: $transparent-white;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  #suv {
+    margin-right: 10px;
+  }
+
+  img {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 30px 30px 30px 30px;
+    background: $very-light-gray;
+    text-align: center;
+    padding: 10px;
+    width: 120px;
+    border: none;
+    font-weight: 550;
+
+    &:hover {
+      border: 1px solid white;
+    }
+  }
+
+  #btn-sedan {
+    color: $bright-orange;
+
+    &:hover {
+      background: $bright-orange;
+      color: $transparent-white;
+    }
+  }
+
+  #btn-suv {
+    color: $dark-cyan;
+
+    &:hover {
+      background: $dark-cyan;
+      color: $transparent-white;
+    }
+  }
+
+  #btn-luxury {
+    color: $very-dark-cyan;
+
+    &:hover {
+      background: $very-dark-cyan;
+      color: $transparent-white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+
+    .luxury {
+      p {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  .content {
+    p {
+      font-size: 13px;
+      margin-bottom: 0px;
+      margin-right: 14px;
+    }
+  }
+
+  button {
+    margin-top: unset;
+  }
+}

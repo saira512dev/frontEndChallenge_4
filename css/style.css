@@ -21,10 +21,10 @@ body {
 
 main {
   margin: 10px 20px;
-  border-radius: 15px 15px 15px 15px;
   display: flex;
 }
 main .sedans {
+  border-radius: 8px 0 0 8px;
   background: #e38826;
 }
 main .sedans p {
@@ -35,6 +35,7 @@ main .suvs {
 }
 main .luxury {
   background: #004241;
+  border-radius: 0 8px 8px 0;
 }
 
 .content {
@@ -99,6 +100,13 @@ main .luxury {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
+    margin: 40px 20px;
+  }
+  main .sedans {
+    border-radius: 8px 8px 0 0;
+  }
+  main .luxury {
+    border-radius: 0 0 8px 8px;
   }
   main .luxury p {
     margin-right: 18px;

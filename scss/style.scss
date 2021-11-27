@@ -14,10 +14,11 @@ body {
 
 main {
   margin: 10px 20px;
-  border-radius: 15px 15px 15px 15px;
   display: flex;
+  // border-radius: 15px 15px 15px 15px;
 
   .sedans {
+    border-radius: 8px 0 0 8px;
     background: $bright-orange;
 
     p {
@@ -31,6 +32,7 @@ main {
 
   .luxury {
     background: $very-dark-cyan;
+    border-radius: 0 8px 8px 0;
   }
 }
 
@@ -107,8 +109,15 @@ main {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
+    margin: 40px 20px;
+
+    .sedans {
+      border-radius: 8px 8px 0 0;
+    }
 
     .luxury {
+      border-radius: 0 0 8px 8px;
+
       p {
         margin-right: 18px;
       }
